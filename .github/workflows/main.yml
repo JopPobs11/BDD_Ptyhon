@@ -19,7 +19,7 @@ jobs:
       run: pip install -r requirements.txt
     
     - name: Behave Test
-      run:
+      run: |
         cd src
         chrome -version
         chromedriver --version 
