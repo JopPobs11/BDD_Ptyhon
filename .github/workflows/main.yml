@@ -20,7 +20,8 @@ jobs:
     
     - name: Behave Test
       run: |
+        $env:HEADLESS = $true
         cd src
         chrome -version
         chromedriver --version 
-        HEADLESS=true behave
+        behave
